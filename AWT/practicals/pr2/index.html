@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <svg class="icon target-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+            </svg>
+            <h1>Number Guessing Game</h1>
+        </div>
+        <div class="game-content">
+            <div class="game-stats">
+                <div class="timer">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <span id="timer">30s</span>
+                </div>
+                <div class="attempts">
+                    Attempts: <span id="attempts">5</span>/5
+                </div>
+            </div>
+            <div id="feedback" class="feedback">
+                Guess a number between 1 and 100!
+            </div>
+            <div class="input-group">
+                <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+            </div>
+            <div class="button-group">
+                <button id="submit" class="btn btn-primary">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="6" />
+                        <circle cx="12" cy="12" r="2" />
+                    </svg>
+                    Submit Guess
+                </button>
+                <div class="secondary-buttons">
+                    <button id="reset" class="btn btn-success hidden">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3" />
+                        </svg>
+                        New Game
+                    </button>
+                    <button id="quit" class="btn btn-danger">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m15 9-6 6" />
+                            <path d="m9 9 6 6" />
+                        </svg>
+                        Quit
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="winner" class="winner hidden">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.11" />
+                <path d="M15 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                <path d="M9 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                <path d="M12 7h0" />
+                <path d="M12 7h0" />
+            </svg>
+            <span>Winner!</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

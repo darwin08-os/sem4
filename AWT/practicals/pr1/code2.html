@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sort = (arr) => {
+            for (var i = 0; i < arr.length; i++) {
+                var min = i;
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (arr[j] < arr[min]) {
+                        min = j;
+                    }
+                }
+                if (arr[min] < arr[i]) {
+                    var temp = arr[min];
+                    arr[min] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        };
+        var array = [10, 8, 3, 6, 5, 1, 2];
+        console.log(`Unsorted Array: ${array}`);
+        sort(array);
+        console.log(`Sorted Array: ${array}`);
+        if (array.length >= 2) {
+            console.log(`2nd Smallest Element: ${array[1]}`);
+            console.log(`2nd Largest Element: ${array[array.length - 2]}`);
+        } else {
+            console.log("Array does not have enough elements to determine the 2nd smallest and 2nd largest.");
+        }
+    </script>
+</body>
+</html>
