@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const st = "HII this is marwadi university "
+    let find_long=(st)=>{
+        var newst = st.split(" ")
+        var ans = "0" ;
+        newst.forEach(element => {
+            if(element.length > ans.length){
+                ans = element
+            }
+        });
+        console.log(ans)
+    }
+    find_long(st)
+</script>
+</html>

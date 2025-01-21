@@ -1,0 +1,7 @@
+<!-- 1.CREATE TWO FILES WHERE ONE EXPORT A FUNCTION AND ANOTHER IMPORT IT USE LIVE SERVER OR XAMMP --> 
+<!--2.create function that accept multiple arguments using rest operator and merge array using spread operator. -->
+<!-- 3. reverse string using ES6  -->
+<!-- 4. FIND duplicate elements from array -->
+<!-- 5. remove below values from array (null,undefinded,0,false,not a number Nan, empy string)-->
+<!-- 6. find longest word from string-->
+<!-- 7. display sum of all even numbers -->

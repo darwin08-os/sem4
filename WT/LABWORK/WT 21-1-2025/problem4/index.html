@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+</body>
+<script>
+    
+    var arr = [1,2,4,5,4,6,6,6,6,6]
+    let remove_duplicate = (arr)=>{
+        const freq = {}
+        for(let i =0;i<arr.length;i++){
+            if(arr[i] in freq){
+                freq[arr[i]] += 1
+            }
+            else{
+                freq[arr[i]] = 0;
+            }
+        }
+        var kys = Object.keys(freq)
+        var ans = []
+       for(let i=0;i<kys.length;i++){
+        ans.push(kys[i])
+       }
+       console.log(ans)
+    }
+    remove_duplicate(arr)
+</script>
+</html>
