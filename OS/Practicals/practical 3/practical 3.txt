@@ -1,0 +1,39 @@
+practical 3:
+echo "My name is Harsh Vadgama"
+echo "My enrollment number is 92410103123"
+echo "My class is EC5-C"
+
+echo "Enter a number to display its multiplication table:"
+read n
+
+
+if ! [[ "$n" =~ ^[0-9]+$ ]]; then
+    echo "Invalid input!!"
+    exit 1
+fi
+
+# Display the multiplication table
+echo "Multiplication table for $n:"
+for ((i = 1; i <= 10; i++)); do
+    echo "$n x $i = $((n * i))"
+done
+
+
+
+output:
+My name is Harsh Vadgama
+My enrollment number is 92410103123
+My class is EC5-C
+Enter a number to display its multiplication table:
+5
+Multiplication table for 5:
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50

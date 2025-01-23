@@ -1,0 +1,36 @@
+practical 2a
+
+echo "enter you name "
+read name
+echo "hello $name welcome to shell script"
+
+
+output: 
+enter you name
+harsh
+hello harsh welcome to shell script
+
+
+
+
+
+practical 2b:
+echo "my name is harsh vadgama"
+echo "my enrollment number is 92410103123"
+echo "my class is EC5-C"
+
+echo "enter number 1 : "
+read no1
+echo "enter number 2 : "
+read no2
+sum=$((no1+no2))
+echo "result: $sum"
+
+output :
+my enrollment number is 92410103123
+my class is EC5-C
+enter number 1 : 
+12
+enter number 2 : 
+12
+result: 24
