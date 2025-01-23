@@ -1,20 +1,6 @@
-practical 2a
-
-echo "enter you name "
-read name
-echo "hello $name welcome to shell script"
-
-
-output: 
-enter you name
-harsh
-hello harsh welcome to shell script
-
-
-
-
-
 practical 2b:
+
+
 echo "my name is harsh vadgama"
 echo "my enrollment number is 92410103123"
 echo "my class is EC5-C"
