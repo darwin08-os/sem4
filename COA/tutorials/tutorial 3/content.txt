@@ -1,0 +1,23 @@
+in pr3 3rd:
+Let’s go through each statement one by one:
+
+a. R2 ← M[AR]
+This operation means that the content of the memory location specified by the address in the Address Register (AR) is being transferred to Register 2 (R2).
+
+M[AR] refers to the memory location at the address stored in AR.
+R2 ← means that the value fetched from that memory location is loaded into Register 2.
+So, in simpler terms, the value in memory at the address stored in AR is read and placed into R2.
+
+b. M[AR] ← R3
+In this case, the value in Register 3 (R3) is being written to the memory location specified by the Address Register (AR).
+
+M[AR] refers to the memory location at the address stored in AR.
+R3 → means that the value in Register 3 is written to the memory location.
+So, this operation means you are storing the value of R3 into the memory location specified by the address in AR.
+
+c. R5 ← M[R5]
+This operation involves reading from memory and updating the value of Register 5 (R5).
+
+M[R5] refers to the memory location whose address is currently stored in Register 5.
+R5 ← means that the value at that memory location is loaded back into Register 5.
+In simpler terms, you are accessing the memory location specified by the address in R5 and then placing the value from that memory location back into Register 5. This could be a form of dereferencing if we think of R5 as a pointer.
